@@ -7,7 +7,7 @@ import CountrySelect from './components/Countries/CountrySelect';
 function App() {
   return (
     <div className="App">
-      {/* <Api/> */}
+      <Api/>
       <CountryApi/>
       {/* <CountrySelect/> */}
     </div>

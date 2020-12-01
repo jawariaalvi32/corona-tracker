@@ -18,9 +18,9 @@ const Api = () => {
     },[])
     return(
         <div className="d-flex justify-content-center">
-            <Cards text='Confirmed Cases' value={confirmed} color='#ef5350'/>
-            <Cards text='Recovered' value={recovered} color='#039be5'/>
-            <Cards text='Deaths' value={deaths} color='#b0bec5'/>
+            <Cards text='Confirmed' value={confirmed} cardClr='red-card card'/>
+            <Cards text='Recovered' value={recovered} cardClr='green-card card'/>
+            <Cards text='Deaths' value={deaths} cardClr='gray-card card'/>
         </div>
     )
 }

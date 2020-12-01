@@ -20,63 +20,40 @@ const useStyles = makeStyles((theme) => ({
 const CountrySelect = ({countries}) => {
     const classes = useStyles();
     const [state, setState] = React.useState({
-      age: '',
-      name: 'hai',
+      select: '',
     });
   
     const handleChange = (event) => {
-      const name = event.target.name;
+      const select = event.target.name;
       setState({
         ...state,
-        [name]: event.target.value,
+        [select]: event.target.value,
       });
     };
-    console.log("sssss =>",countries)
+    const countryList = 
+      countries.map((items, index) => (
+        <option key={index} value={items.Country}>{items.Country}</option>
+      ))
+  
   return (
     <div className="justify-content-center d-flex">
       <FormControl className={classes.formControl}>
-        <InputLabel htmlFor="age-native-simple">Age</InputLabel>
+        <InputLabel htmlFor="age-native-simple">Countries</InputLabel>
         <Select
           native
-          value={state.age}
+          value={state.select}
           onChange={handleChange}
           inputProps={{
-            name: 'age',
+            select: 'age',
             id: 'age-native-simple',
           }}
         >
             {
-                countries.map((items, index) => (
-                    // {                console.log("dd ", countries[index].Country);
-                // }
-                // console.log("dd ", items.Country)
-                    <option value={items.Country}>{items.Country}</option>
-
-                ))
+              countryList ? countryList : 
+              <option value='0'>Select</option>
             }
-          {/* <option aria-label="None" value="" />
-          <option value={10}>Ten</option>
-          <option value={20}>Twenty</option>
-          <option value={30}>Thirty</option> */}
         </Select>
       </FormControl>
-      {/* <FormControl className={classes.formControl}>
-        <InputLabel htmlFor="age-native-helper">Age</InputLabel>
-        <NativeSelect
-          value={state.age}
-          onChange={handleChange}
-          inputProps={{
-            name: 'age',
-            id: 'age-native-helper',
-          }}
-        >
-          <option aria-label="None" value="" />
-          <option value={10}>Ten</option>
-          <option value={20}>Twenty</option>
-          <option value={30}>Thirty</option>
-        </NativeSelect>
-        <FormHelperText>Some important helper text</FormHelperText>
-      </FormControl> */}
     </div>
   );
 }

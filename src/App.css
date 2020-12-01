@@ -4,3 +4,45 @@
 .justify-content-center {
   justify-content: center;
 }
+.card {
+  margin: 5px !important;
+  height: 176px !important;
+  width: 130px !important;
+  text-align: center;
+  border: none !important;
+}
+.green-card {
+  color: rgba(40,167,69,.6) !important;
+}
+.green-card :hover {
+  opacity: 1 !important; 
+  background-color: rgba(40, 167, 69, 0.125) !important; 
+}
+.red-card {
+  color: #ff073a !important;
+}
+.red-card :hover {
+  opacity: 1 !important;
+  background: rgba(255, 7, 58, 0.125) !important; 
+}
+.gray-card { 
+  color: #6c757d !important;
+}
+.gray-card :hover {
+  opacity: 1 !important; 
+  background: rgba(108, 117, 125, 0.125) !important;
+}
+.blue-card {
+  opacity: 1 !important; background: rgba(0, 123, 255, 0.125) !important; 
+}
+.m-5 {
+  margin: 5% !important;
+}
+h1 {
+  font-weight: 400px !important;
+  font-size: 24px !important;
+}
+h4, h5 {
+  font-weight: 900px !important;
+  font-size: 13px !important;
+}
