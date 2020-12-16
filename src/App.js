@@ -10,15 +10,15 @@ function App() {
     <div className="App">
       <Grid container>
         <Grid item md={6} sm={12}>
-        <img src={Logo} alt="logo" width="100%"/>
+         <img src={Logo} alt="logo" width="100%"/>
         </Grid>
-        <Grid item md={4} sm={12}>
-        <Header/>
-      <Api/>
-      <CountryApi/>
+        <Grid item md={5} sm={12}>
+          <Header/>
+          <Api/>
+          <CountryApi/>
         </Grid>
-      <Grid item md={2} sm={0}/>
-        </Grid>
+        <Grid item md={1} sm={0}/>
+      </Grid>
     </div>
   );
 }
