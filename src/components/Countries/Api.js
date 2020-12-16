@@ -1,6 +1,6 @@
 import React from 'react';
 import Axios from 'axios';
-import CountrySelect from './CountryList';
+import CountryList from './CountryList';
 import {Chart} from './Chart';
 import Country from '../ShowCountryCases';
 import { Grid } from '@material-ui/core';
@@ -10,15 +10,15 @@ const CountryApi = () => {
     const [countries, setCountries] = React.useState(0);
 
     React.useEffect(() => {
-        Axios.get(`https://api.covid19api.com/countries`) 
+        Axios.get(`https://covid19.mathdro.id/api/countries`) 
          .then((res) => {
-           setCountries(res.data)
+           setCountries(res.data.countries)
         })
     },[])
 
     return(
         <div>
-          <CountrySelect countries={countries}/>
+          <CountryList countries={countries}/>
         </div>
     )
 }

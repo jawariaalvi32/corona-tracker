@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 
-const CountrySelect = ({countries}) => {
+const CountryList = ({countries}) => {
     const classes = useStyles();
     const [state, setState] = React.useState(0);
   
@@ -25,7 +25,7 @@ const CountrySelect = ({countries}) => {
     };
     const countryList = (countries) ?
       countries.map((items, index) => (
-        <option key={index} value={items.Country}>{items.Country}</option>
+        <option key={index} value={items.name}>{items.name}</option>
       )):
       <option value='0'>Select</option>
 
@@ -47,4 +47,4 @@ const CountrySelect = ({countries}) => {
   );
 }
 
-export default CountrySelect;
+export default CountryList;
