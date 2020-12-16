@@ -1,3 +1,20 @@
+# Corona Tracker 
+
+This tracker aims to show the numbers of people affected, recovered and deceased due to COVID-19.
+Data classified under 3 categories.
+
+## Built With
+
+* [React](https://reactjs.org/)
+* [Material UI](https://material-ui.com/)
+* [Axios](https://www.npmjs.com/package/axios)
+* [Recharts](http://recharts.org/)
+
+### Live Demo
+
+## Data Source
+https://covid19.mathdro.id/api
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
