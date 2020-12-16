@@ -1,7 +1,7 @@
 import React from 'react'
 import Axios from 'axios';
 import ShowData from './ShowData';
-import {Chart} from './Chart'
+
 const Api = () => {
 
     const [confirmed, setConfirmed] = React.useState(0);
@@ -20,7 +20,6 @@ const Api = () => {
     return (
         <div>
             <ShowData confirmed={confirmed} recovered={recovered} deaths={deaths} />
-            {/* <Chart confirmed={confirmed} recovered={recovered} deaths={deaths}/> */}
         </div>
     )
 }
