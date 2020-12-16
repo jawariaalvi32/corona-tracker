@@ -65,3 +65,6 @@ h4, h5 {
 .MuiPaper-elevation4 {
   box-shadow: none !important;
 }
+text {
+  /* fill: black !important; */
+}
