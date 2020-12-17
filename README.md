@@ -1,7 +1,7 @@
 # Corona Tracker 
 
 This tracker aims to show the numbers of people affected, recovered and deceased due to COVID-19.
-Data classified under 3 categories.
+
 
 ## Built With
 
@@ -10,7 +10,7 @@ Data classified under 3 categories.
 * [Axios](https://www.npmjs.com/package/axios)
 * [Recharts](http://recharts.org/)
 
-### Live Demo
+### [Live Demo](https://coronacovid19-tracker.netlify.app/)
 
 ## Data Source
 https://covid19.mathdro.id/api
