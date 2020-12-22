@@ -2,7 +2,7 @@
 
 This tracker aims to show the numbers of people affected, recovered and deceased due to COVID-19.
 
-![myImage](https://www.loom.com/share/6974d41dcb6d47478eb37701c82febf8)
+[![Watch the video](https://www.loom.com/share/6974d41dcb6d47478eb37701c82febf8)
 
 ## Built With
 
